@@ -27,8 +27,6 @@ SOFTWARE.
 (function (exports) {
     var setup = function (name,values) {
         var styles = [];
-        styles.push('.cssStateMain.cssActive .cssStateShowWhen {display: none}');
-        styles.push('.cssStateMain.cssActive .cssStateHideWhen {display: inherit}');
         for (var i in values) {
             styles.push('.cssStateMain.cssStateActive.'+name+'_'+values[i]+'  .cssStateShowWhen.'+name+'_is_'+values[i]
                    +'{display: inherit}'

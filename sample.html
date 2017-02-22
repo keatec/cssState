@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="css/cssState.css" rel="stylesheet">
+</head>
+<body class="cssStateMain">
+    <div class="cssStateShowWhen user_is_admin" >I'm visible for Admins</div>
+    <div class="cssStateHideWhen user_is_public" >Not Visible to Public</div>
+    <div class="cssStateController">
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
+    <script src="js/cssState.js"></script>
+    <script>
+        /* Config states */
+        cssState.add('login',['on','off']);
+        cssState.add('user',['public','admin','expert']);
+
+        /* Set States */
+
+        cssState.login('on');
+        cssState.user('admin');
+
+        /* Startup using states currently set (compile CSS and add to Header Section) */
+        cssState.init();
+    </script>
+</body>
+</html>

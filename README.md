@@ -11,19 +11,19 @@ Libary to Manage States (like "LogedIn", "Public") of SinglePage HTML Sites usin
 
 You need to reference the css and js inside HTML site
 ```html
-    <link href="css/cssState.css" rel="stylesheet">
-    <script src="js/cssState.js"></script>
+<link href="css/cssState.css" rel="stylesheet">
+<script src="js/cssState.js"></script>
 ```
 During page `onload` you  
 * define states
 * set start states
 * Activate Libary
 ```Javascript
-        cssState.add('login',['on','off']);
-        cssState.add('user',['public','admin','expert']);
-        cssState.login('off');
-        cssState.user('public');
-        cssState.init();
+cssState.add('login',['on','off']);
+cssState.add('user',['public','admin','expert']);
+cssState.login('off');
+cssState.user('public');
+cssState.init();
 ```
 ## Requirements
 
@@ -55,7 +55,8 @@ Definition is finished, compile states and add the result as local css style.
 
     cssState.{statename}({value});
 
-Activate a value {value} for state {statename} 
+Activate a value {value} for state {statename}.   
+Can also be used to define start values for states before cssState.init()
 
 
 ## Sample (--> sample.html)

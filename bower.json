@@ -1,0 +1,22 @@
+{
+  "name": "cssState",
+  "homepage": "https://github.com/keatec/cssState",
+  "description": "Libary to generated automated css styles for state changing",
+  "main": "js/cssState.js",
+  "keywords": [
+    "css",
+    "generation",
+    "singleside"
+  ],
+  "authors": [
+    "Keatec GmbH"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

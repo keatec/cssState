@@ -4,6 +4,12 @@
     <link href="css/cssState.css" rel="stylesheet">
 </head>
 <body class="cssStateMain">
+    <div class="cssStateShowWhen login_is_off">
+        User is Loged out <button type="button" onclick="cssState.login('on')">Login...</button>
+    </div>
+    <div class="cssStateShowWhen login_is_on">
+        User is Loged in<button type="button" onclick="cssState.login('off')">Logout...</button>
+    </div>
     <div class="cssStateShowWhen user_is_admin" >I'm visible for Admins</div>
     <div class="cssStateHideWhen user_is_public" >Not Visible to Public</div>
     <div class="cssStateController">

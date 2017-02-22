@@ -2,14 +2,13 @@
 
 /*
 
-    These Classes are use to ensure 
-        - every Node is hidden from Start, until the Real states are initialized
+    These Classes are use to ensure every Node is hidden from Start, until the Real states are initialized
 
 */
 
 
 .cssStateMain.cssStateActive .cssStateShowWhen {display: none}
-.cssStateMain.cssStateActive .cssStateHideWhen {display: block}
+.cssStateMain.cssStateActive .cssStateHideWhen {display: inherit}
 .cssStateMain .cssStateShowWhen {display: none}
 .cssStateMain .cssStateHideWhen {display: none}
 

@@ -1,0 +1,29 @@
+
+
+/*
+
+    These Classes are use to ensure 
+        - every Node is hidden from Start, until the Real states are initialized
+
+*/
+.cssStateMain .cssStateShowWhen {display: none}
+.cssStateMain .cssStateHideWhen {display: none}
+
+
+/*
+
+    Styles for the Controller Object
+
+*/
+.cssStateController {
+    margin-top: 65pt;
+    margin-left: 14pt;
+    opacity: 0.5;
+}
+
+.cssStateController select {
+    display: inline-block;
+    margin-bottom: 5pt;
+    margin-left: 6pt;
+}
+

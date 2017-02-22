@@ -1,5 +1,5 @@
 {
-  "name": "cssState",
+  "name": "cssstate",
   "homepage": "https://github.com/keatec/cssState",
   "description": "Libary to generated automated css styles for state changing",
   "main": "js/cssState.js",

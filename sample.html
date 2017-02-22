@@ -13,21 +13,31 @@
     <div class="cssStateShowWhen user_is_admin" >I'm visible for Admins</div>
     <div class="cssStateHideWhen user_is_public" >Not Visible to Public</div>
     <div class="cssStateController">
+        <!-- 
+            a HTML Form to select the different state interactively is
+            created inside this TAG
+        -->
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>    
     <script src="js/cssState.js"></script>
     <script>
-        /* Config states */
+        /* Config states on Startup*/
+
         cssState.add('login',['on','off']);
         cssState.add('user',['public','admin','expert']);
 
-        /* Set States */
+        /* Set States on Startup */
 
-        cssState.login('on');
-        cssState.user('admin');
+        cssState.login('off');
+        cssState.user('public');
 
         /* Startup using states currently set (compile CSS and add to Header Section) */
         cssState.init();
+
+        /* 
+            Form This point you can set the States using
+             cssState.{statename}({state});
+        */
     </script>
 </body>
 </html>

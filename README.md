@@ -4,6 +4,10 @@
 ## Description
 Libary to Manage States (like "LogedIn", "Public") of SinglePage HTML Sites using automated generated CSS classes.
 
+You should use this cause
+* You can Hide or Show Menu Elements based on defined states
+* The result ist human readable as text
+* Show or hide Informations, Animations ect. based on global switches (expert mode / junior mode)
 
 ## Installation
 
@@ -27,35 +31,39 @@ cssState.init();
 ```
 ## Requirements
 
-JQuery is required
+__JQuery__ is required
 
 ## Classes
 
     cssStateMain
 
-Defines scope for cssState (body as default)
+__Defines__ scope for cssState (body as default)
 
     cssStateShowWhen {statename}_is_{value}
 
-Show the element, if the state `{statename}`  has the specific  value `{value}`
+__Show__ the element, if the state `{statename}`  has the specific  value `{value}`
+
+    cssStateHideWhen {statename}_is_{value}
+
+__Hide__ the element, if the state `{statename}`  has the specific  value `{value}`
 
     cssStateController
 
-defines a place where the libary creates a debug control to change all states interactiv
+__Defines__ a place where the libary creates a debug control to change all states interactiv
 
 ## Javascript Object
 
     cssState.add({statename},[{value1},{value2},...]);
 
-Add a state {statename} with possible values 
+__Add__ a state {statename} with possible values 
 
     cssState.init();
 
-Definition is finished, compile states and add the result as local css style.
+__Definition__ is finished, compile states and add the result as local css style.
 
     cssState.{statename}({value});
 
-Activate a value {value} for state {statename}.   
+__Activate__ a value {value} for state {statename}.   
 Can also be used to define start values for states before cssState.init()
 
 

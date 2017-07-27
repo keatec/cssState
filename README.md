@@ -2,9 +2,9 @@
 
 
 ## Description
-Libary to Manage States (like "LogedIn", "Public") of SinglePage HTML Sites using automated generated CSS classes.
+Library to Manage States (like "LogedIn", "Public") of SinglePage HTML Sites using automated generated CSS classes.
 
-You should use this cause
+You should use this because
 * You can Hide or Show Menu Elements based on defined states
 * The result ist human readable as text
 * Show or hide Informations, Animations ect. based on global switches (expert mode / junior mode)
@@ -49,7 +49,7 @@ __Hide__ the element, if the state `{statename}`  has the specific  value `{valu
 
     cssStateController
 
-__Defines__ a place where the libary creates a debug control to change all states interactiv
+__Defines__ a place where the library creates a debug control to change all states interactively
 
 ## Javascript Object
 
